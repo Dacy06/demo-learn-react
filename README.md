@@ -1,5 +1,6 @@
 学习教程来自：[React入门教程](https://www.html.cn/archives/9710)
-[项目源码地址](https://www.html.cn/archives/9710)
+
+[项目源码地址](https://github.com/taniarascia/react-tutorial)
 
 ------
 
