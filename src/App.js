@@ -1,26 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+// 
+import React, { Component } from 'react';
+import Table from './Table';
+import Form from './Form';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  state = {
+    persons:[],
+  };
+  render() {
+    return (
+      <div className="container">
+        <Table persons={this.state.persons}
+        removePerson={this.removePerson}/>
+        <Form handleSubmit={this.handleSubmit}/>
+      </div>
+    );
+  }
+  handleSubmit = person => {
+    this.setState({
+      persons:[...this.state.persons, person]
+    });
+  }
+  removePerson = index => {
+    const { persons } = this.state;
+    this.setState({
+      persons:persons.filter((person,i)=>{
+        return i!== index;
+      })
+    })
+  }
 }
-
+// 导出组件
 export default App;
