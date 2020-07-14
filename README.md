@@ -1,7 +1,6 @@
-学习教程来自：[React入门教程](https://www.html.cn/archives/9710)
+- 学习教程来自：[React入门教程](https://www.html.cn/archives/9710)｜[项目源码地址](https://github.com/taniarascia/react-tutorial)
 
-[项目源码地址](https://github.com/taniarascia/react-tutorial)
-
+- 查看[演示Demo](https://dacy06.github.io/demo-learn-react/)
 ------
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
